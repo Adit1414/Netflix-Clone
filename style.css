@@ -9,7 +9,7 @@ body {
     height: 380%;
     background-color: black;
     position: absolute;
-    max-width: 100vw;
+    max-width: 88vw;
 }
 
 /* Top */
@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     background-image: url("assets/images/bg.svg");
     background-position: center center;
-    background-size: max(1100px, 100vw);
+    background-size: max(1300px, 100vw);
     background-repeat: no-repeat;
 }
 
@@ -42,9 +42,9 @@ body {
 }
 
 .lang {
-    width: 8vw;
-    height: 5vh;
-    position: absolute;
+    width: 16.5vmin;
+    height: 4.2vh;
+    position: relative;
     left: 75vw;
     color: white;
     border: 1px solid rgb(108, 108, 108);
@@ -59,19 +59,20 @@ body {
 }
 
 .signin {
-    width: 6vw;
-    height: 4vh;
-    position: absolute;
+    width: 12vmin;
+    height: 4.4vh;
+    position: relative;
+    top: -4.2vh;
     left: 84vw;
     color: white;
     background-color: rgb(229, 9, 20);
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-    font-weight: bold;
+    font-weight: 500;
     border-radius: 4px;
     border: 0;
     font-size: 1vw;
-    padding: 1vh;
-    padding-bottom: 4vh;
+    padding: 0.5vh;
+    /* padding-tp: 4vh; */
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -87,7 +88,7 @@ body {
     max-width: 46vw;
     left: 26vw;
     top: 28vh;
-    gap: 25px;
+    gap: 3vh;
 }
 
 .heading {
@@ -117,6 +118,7 @@ body {
     position: relative;
     top: 63.5vh;
     left: 30vw;
+    height: 8vh;
 }
 
 .mail {
@@ -128,7 +130,7 @@ body {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    padding: 8px;
+    padding: 1vw;
     font-size: 2.3vh;
 }
 
@@ -144,7 +146,7 @@ body {
     justify-content: center;
     margin-left: 2%;
     padding: 4%;
-    font-weight: bold;
+    font-weight: 500;
     padding-left: 6%;
     font-size: 1.7vw;
 }
@@ -179,7 +181,7 @@ body {
     /* Align the red line perfectly */
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 0.7vh;
     /* Adjust thickness of the red line */
     background: linear-gradient(to right,
             rgba(33, 13, 22, 1) 16%,
@@ -200,7 +202,7 @@ body {
     color: white;
     font-size: 24px;
     font-weight: bolder;
-    left: 10%;
+    left: 11.5%;
 }
 
 .sort {
@@ -211,7 +213,7 @@ body {
 .country {
     position: relative;
     height: 6vh;
-    width: 7vw;
+    width: 14vh;
     border: 1px solid rgb(153, 153, 153);
     background-color: rgba(33, 33, 33, 0.557);
     color: white;
@@ -230,7 +232,7 @@ body {
     align-items: center;
     top: -8vh;
     height: 6vh;
-    width: 8vw;
+    width: 16vh;
     border: 1px solid rgb(153, 153, 153);
     background-color: rgba(33, 33, 33, 0.557);
     color: white;
@@ -242,11 +244,11 @@ body {
     display: flex;
     overflow-x: auto; /* Horizontal scroll */
     scroll-behavior: smooth; /* Smooth scrolling */
-    gap: 15px; /* Space between movies */
+    gap: 3vw; /* Space between movies */
     width: 75vw;
-    padding: 20px 0;
-    margin-top: 20px;
-    margin-left: 150px;
+    padding: 1vh 0;
+    margin-top: 1vh;
+    margin-left: 11.2vw;
     white-space: nowrap;
     background-color: black;
     scroll-padding-left: 10%;
@@ -260,7 +262,7 @@ body {
 
 .movie {
     flex: 0 0 auto; /* Prevent shrinking */
-    width: 180px; /* Adjust movie width */
+    width: 11.5vw; /* Adjust movie width */
     border-radius: 7px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -273,14 +275,17 @@ body {
 .head{
     color: white;
     position: relative;
-    left: 150px;
+    top: 5vh;
+    left: 10.1vw;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
 }
 
 .reasons{
     display: flex;
+    position: relative;
+    top: 5vh;
 }
 
 .reason{
@@ -288,9 +293,9 @@ body {
     display: flex;
     flex-direction: column;
     margin-right: 15px;
-    left: 150px;
-    height: 275px;
-    width: 275px;
+    left: 10vw;
+    height: 38.5vh;
+    width: 38.5vh;
     padding: 15px;
     gap: 15px;
     border-radius: 15px;     
@@ -334,13 +339,14 @@ body {
 }
 
 .faqhead{
-    margin-top: 4%;
+    margin-top: 7.5vh;
 }
 
 .faqs{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
+    top: 5vh;
 }
 
 .faq{
@@ -349,14 +355,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    left: 150px;
+    left: 10vw;
     background-color: rgb(45, 45, 45);
     margin: 4px;
-    height: 80px;
+    height: 11vh;
     /* width: 1140px; */
-    width: 77vw;
+    width: 79vw;
     font-size: 25px;
-    padding-inline: 25px;
+    padding-inline: 1.4vw;
 }
 
 .bottom{
@@ -371,27 +377,27 @@ body {
 
 .ready{
     position: relative;
-    font-size: 17px;
-    left: 197px;
-    top: 5px;
+    font-size: 16px;
+    left: 12vw;
+    top: 1.2vh;
 }
 
 .bottom .buttons{
     position: relative;
     left: 0;
-    top: 20px;
+    top: 3vh;
     gap: 4px;
-    margin-left: 350px;
+    margin-left: 23vw;
 }
 
 .bottom .mail{
-    height: 60px;
-    width: 560px;
+    height: 8vh;
+    width: 36vw;
 }
 .questions{
     position: relative;
-    top: 85px;
-    left: -275px;
+    top: 12vh;
+    left: -18vw;
     font-size: 17px;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -401,7 +407,7 @@ body {
 
 .foobuttons{
     position: relative;
-    top: 126px;
+    top: 18vh;
     display: flex;
     gap: 11vw;
     left: 5.9vw;
@@ -424,7 +430,7 @@ body {
 
 .bottom .lang{
     position: relative;
-    left: -340px;
+    left: -23vw;
     top: 25vh;
     height: 4vh;
 }
@@ -433,4 +439,80 @@ body {
     position: relative;
     left: -24vw;
     top: 30vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .content .heading{
+        font-size: 45px;
+    }
+    .content .description{
+        font-size: 20px;
+    }
+    .content .desc2{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .content .heading{
+        font-size: 35px;
+    }
+    .content .description{
+        font-size: 15px;
+    }
+    .content .desc2{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .content .heading{
+        font-size: 30px;
+    }
+    .content .description{
+        font-size: 13px;
+    }
+    .content .desc2{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .content .heading{
+        font-size: 23px;
+    }
+    .content .description{
+        font-size: 12px;
+    }
+    .content .desc2{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .reasons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .reason{
+        height: 30vh;
+        width: 80vw;
+        margin: 5px;
+        left: 5vw;
+    }
+    .ready{
+        font-size: 12px;
+        position: relative;
+        left: 0;
+    }
+    .foobuttons{
+        gap: 1vw;
+    }
+    .column button{
+        font-size: 12px;
+    }
+    .bottom{
+        top: 360vh;
+    }
+    .questions{
+        left: 5vw;
+    }
 }
